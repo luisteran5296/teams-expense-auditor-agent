@@ -13,6 +13,12 @@ Watch the Multi-Agent Expense Auditor in action: an employee uploads a receipt i
 <!-- Demo Video / GIF Embed -->
 [![Watch the Demo](https://img.shields.io/badge/Demo%20Video-Watch%20in%20Action-1B365D?style=for-the-badge&logo=microsoftteams&logoColor=white)](https://github.com/luisteran5296/teams-expense-auditor-agent)
 
+
+
+https://github.com/user-attachments/assets/afe8096b-92ad-4eee-8896-97883e131aa7
+
+
+
 > [!TIP]
 > **What this demo showcases:**
 > 1. Dragging & dropping a receipt image or PDF directly into Teams chat.
