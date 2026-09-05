@@ -70,8 +70,10 @@ def create_hotel_stay_pdf():
     draw.text((60, 795), "Nightly rate of $185.00 is within corporate policy limit ($250.00/night). No room service/alcohol.", fill="#274E36")
 
     pdf_path = OUTPUT_DIR / "1_compliant_hotel_stay.pdf"
+    png_path = OUTPUT_DIR / "1_compliant_hotel_stay.png"
     img.save(str(pdf_path), "PDF", resolution=100.0)
-    print(f"Generated: {pdf_path}")
+    img.save(str(png_path), "PNG")
+    print(f"Generated: {pdf_path} and {png_path}")
     return pdf_path
 
 
@@ -132,8 +134,10 @@ def create_flagged_dinner_pdf():
     draw.text((60, y + 270), "2. Contains $103.00 in alcoholic beverages (Wine & Whisky prohibited without VP sign-off).", fill="#7F1D1D")
 
     pdf_path = OUTPUT_DIR / "2_flagged_executive_dinner_alcohol.pdf"
+    png_path = OUTPUT_DIR / "2_flagged_executive_dinner_alcohol.png"
     img.save(str(pdf_path), "PDF", resolution=100.0)
-    print(f"Generated: {pdf_path}")
+    img.save(str(png_path), "PNG")
+    print(f"Generated: {pdf_path} and {png_path}")
     return pdf_path
 
 
@@ -200,8 +204,10 @@ def create_high_value_it_equipment_pdf():
     draw.text((60, 720), "• IT hardware requires a formal Purchase Order (PO) and Department VP Sign-Off.", fill="#7F1D1D")
 
     pdf_path = OUTPUT_DIR / "3_high_value_it_equipment_requires_po.pdf"
+    png_path = OUTPUT_DIR / "3_high_value_it_equipment_requires_po.png"
     img.save(str(pdf_path), "PDF", resolution=100.0)
-    print(f"Generated: {pdf_path}")
+    img.save(str(png_path), "PNG")
+    print(f"Generated: {pdf_path} and {png_path}")
     return pdf_path
 
 
@@ -269,8 +275,10 @@ def create_flight_receipt_pdf():
     draw.text((60, 665), "Complies with travel policy: Booked in Standard Economy, domestic business route.", fill="#274E36")
 
     pdf_path = OUTPUT_DIR / "4_compliant_flight_receipt.pdf"
+    png_path = OUTPUT_DIR / "4_compliant_flight_receipt.png"
     img.save(str(pdf_path), "PDF", resolution=100.0)
-    print(f"Generated: {pdf_path}")
+    img.save(str(png_path), "PNG")
+    print(f"Generated: {pdf_path} and {png_path}")
     return pdf_path
 
 
