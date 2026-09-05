@@ -1,0 +1,26 @@
+{
+  "company_name": "Acme Global Enterprise",
+  "policy_version": "2026.2",
+  "rules": {
+    "meals_and_entertainment": {
+      "max_per_person_usd": 75.00,
+      "require_itemized_receipt": true,
+      "alcohol_allowed": false,
+      "weekend_meals_flag": true
+    },
+    "software_and_saas": {
+      "max_direct_expense_usd": 500.00,
+      "require_security_review_above_usd": 1000.00
+    },
+    "travel_and_lodging": {
+      "max_nightly_hotel_usd": 250.00,
+      "airfare_class_allowed": ["economy", "coach"],
+      "receipt_mandatory_above_usd": 25.00
+    },
+    "general": {
+      "max_unapproved_transaction_usd": 1000.00,
+      "allowed_currencies": ["USD", "EUR", "GBP", "CAD", "MXN"],
+      "duplicate_detection_lookback_days": 60
+    }
+  }
+}

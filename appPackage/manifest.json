@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.17",
+  "version": "1.0.0",
+  "id": "74fe027f-27da-4c7e-a234-6fa9e8514ccb",
+  "developer": {
+    "name": "Custom Organization",
+    "websiteUrl": "https://www.example.com",
+    "privacyUrl": "https://www.example.com/privacy",
+    "termsOfUseUrl": "https://www.example.com/terms"
+  },
+  "name": {
+    "short": "AI Agent Bot",
+    "full": "AI Agent Bot"
+  },
+  "description": {
+    "short": "Multi-Agent Invoice & Expense Auditor for Microsoft Teams",
+    "full": "AI Agent Bot integrated into Microsoft Teams that extracts receipt & invoice line items using Multimodal Vision AI, audits corporate policy compliance, and routes manager approval workflows."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#1B365D",
+  "bots": [
+    {
+      "botId": "74fe027f-27da-4c7e-a234-6fa9e8514ccb",
+      "scopes": [
+        "personal",
+        "team",
+        "groupchat"
+      ],
+      "supportsFiles": true,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "*.botframework.com",
+    "*.ngrok.io",
+    "*.devtunnels.ms"
+  ]
+}
